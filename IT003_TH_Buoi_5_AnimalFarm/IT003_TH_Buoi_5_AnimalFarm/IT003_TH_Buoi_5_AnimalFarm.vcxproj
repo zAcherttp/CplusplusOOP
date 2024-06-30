@@ -132,6 +132,7 @@
     <ClCompile Include="Cow.cpp" />
     <ClCompile Include="Goat.cpp" />
     <ClCompile Include="IT003_TH_Buoi_5_AnimalFarm.cpp" />
+    <ClCompile Include="random.cpp" />
     <ClCompile Include="Sheep.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +140,7 @@
     <ClInclude Include="AnimalFarm.h" />
     <ClInclude Include="Cow.h" />
     <ClInclude Include="Goat.h" />
+    <ClInclude Include="random.h" />
     <ClInclude Include="Sheep.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

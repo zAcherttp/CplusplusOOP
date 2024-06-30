@@ -3,11 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34707.107
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IT003_TH_Buoi_5_AnimalFarm", "IT003_TH_Buoi_5_AnimalFarm\IT003_TH_Buoi_5_AnimalFarm.vcxproj", "{72DEDA27-B02F-49CA-AEA0-FB89D4BDDE40}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72DEDA27-B02F-49CA-AEA0-FB89D4BDDE40}.Debug|x64.ActiveCfg = Debug|x64
+		{72DEDA27-B02F-49CA-AEA0-FB89D4BDDE40}.Debug|x64.Build.0 = Debug|x64
+		{72DEDA27-B02F-49CA-AEA0-FB89D4BDDE40}.Debug|x86.ActiveCfg = Debug|Win32
+		{72DEDA27-B02F-49CA-AEA0-FB89D4BDDE40}.Debug|x86.Build.0 = Debug|Win32
+		{72DEDA27-B02F-49CA-AEA0-FB89D4BDDE40}.Release|x64.ActiveCfg = Release|x64
+		{72DEDA27-B02F-49CA-AEA0-FB89D4BDDE40}.Release|x64.Build.0 = Release|x64
+		{72DEDA27-B02F-49CA-AEA0-FB89D4BDDE40}.Release|x86.ActiveCfg = Release|Win32
+		{72DEDA27-B02F-49CA-AEA0-FB89D4BDDE40}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D5B179F7-F45B-429C-8212-B355E52D128B}
+		SolutionGuid = {D182E16E-2FBC-4647-A492-BF2D0C690409}
 	EndGlobalSection
 EndGlobal

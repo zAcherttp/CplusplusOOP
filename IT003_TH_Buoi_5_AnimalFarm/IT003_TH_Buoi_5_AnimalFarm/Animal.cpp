@@ -1,10 +1,12 @@
 #include "Animal.h"
 
-Animal::Animal(std::string _type, int _hunger, int _milk)
+Animal::Animal(string _type, int _hunger, int _milk, int _gen)
 {
 	this->Type = _type;
 	this->HungerLevel = _hunger;
 	this->MilkProduction = _milk;
+	this->IndividualMilkProductionAtDay = {};
+	this->Gen = _gen;
 }
 
 Animal::~Animal()
@@ -18,13 +20,12 @@ std::string Animal::makeSound() const
 
 void Animal::giveMilk()
 {
-	
 }
 
-void Animal::giveOffspring()
+void Animal::giveOffspring(vector<Animal*>& farmSpace)
 {
 }
 
-void Animal::eat() const
+void Animal::eat()
 {
 }

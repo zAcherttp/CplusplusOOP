@@ -2,21 +2,23 @@
 #include <iostream>
 #include <string>
 #include <vector>
+using namespace std;
 
 class Animal
 {
-private:
-	std::string Type;
+public:
+	string Type;
 	int HungerLevel;
 	int MilkProduction;
-	std::vector<int> IndividualMilkProductionAtDay;
-	int Generation;
+	vector<int> IndividualMilkProductionAtDay;
+	int Gen;
 public:
-	Animal(std::string _type = "", int _hunger, int _milk);
+	Animal(string _type = "", int _hunger = 0, int _milk = 0, int _gen = 1);
 	~Animal();
-	virtual std::string makeSound() const;
-	static void giveMilk();
-	static void giveOffspring();
-	void eat() const;
+
+	virtual string makeSound() const;
+	virtual void giveMilk();
+	virtual void giveOffspring(vector<Animal*> &farmSpace);
+	virtual void eat();
 };
 

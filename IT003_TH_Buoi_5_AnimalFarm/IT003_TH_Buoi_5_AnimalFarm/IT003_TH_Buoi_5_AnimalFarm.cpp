@@ -1,20 +1,46 @@
-// IT003_TH_Buoi_5_AnimalFarm.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-#include <iostream>
+#include "AnimalFarm.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    vector<Animal* > startingFarm =
+    { new Cow(), new Cow(), new Sheep(), new Sheep(), new Goat(), new Goat() };
+
+    AnimalFarm Farm(startingFarm);
+
+    int option = 0;
+    while (option != 4) {
+        cout << "1 - next day.\n";
+        cout << "2 - feed all.\n";
+        cout << "3 - statistic.\n";
+        cout << "4 - end.\n";
+        
+        cin >> option;
+        switch (option)
+        {
+        case 1:
+        {
+            Farm.simulateDay();
+            break;
+        }
+        case 2:
+        {
+            Farm.feedAll();
+            break;
+        }
+        case 3:
+        {
+            Farm.printStatistic();
+            Farm.getTotalMilk();
+            break;
+        }
+        case 4:
+        {
+            return 0;
+        }
+        default:
+            cout << "incorrect choice!\n";
+        }
+    }
+
+    
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

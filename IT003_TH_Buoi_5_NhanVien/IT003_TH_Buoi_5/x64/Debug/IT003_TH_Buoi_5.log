@@ -1,2 +1,7 @@
-﻿  IT003_TH_Buoi_5.cpp
-  IT003_TH_Buoi_5.vcxproj -> C:\Users\Salad\source\repos\IT003_TH_Buoi_5\x64\Debug\IT003_TH_Buoi_5.exe
+﻿C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (IT003_TH_Buoi_5.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  IT003_TH_Buoi_5.cpp
+  NhanVien.cpp
+  NhanVienSX.cpp
+  NhanVienVP.cpp
+  Generating Code...
+  IT003_TH_Buoi_5.vcxproj -> E:\CplusplusOOP\IT003_TH_Buoi_5_NhanVien\x64\Debug\IT003_TH_Buoi_5_Bai_1.exe

@@ -1,11 +1,17 @@
 #pragma once
 #include "Animal.h"
-class Cow :
-    protected Animal
-{
-private:
+using namespace std;
 
+class Cow :
+    public Animal
+{
 public:
-    std::string makeSound() const;
+    static int Generation;
+public:
+    Cow(string _type = "Cow", int _gen = Generation) : Animal(_type, 0, 0, _gen) {}
+    string makeSound() const override;
+    void giveMilk() override;
+    void giveOffspring(vector<Animal*> &farmSpace) override;
+    void eat() override;
 };
 
